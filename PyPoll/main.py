@@ -32,7 +32,6 @@ with open(pypoll_csv, newline="") as csvfile:
     print("---------------------------------------------")
     output.writelines("---------------------------------------------\n")
 
-    f"Total Votes: {totalvotes}"
     for key in summary:
         print (key, ":",round(((summary[key]/totalvotes)*100),3) ,"%", "(",summary[key],")")
 
